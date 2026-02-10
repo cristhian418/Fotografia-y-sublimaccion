@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración del idioma y caracteres especiales -->
+  <meta charset="UTF-8">
+
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>Servicios - Foto & Sublima</title>
+
+  <style>
+    /* Estilos generales del cuerpo de la página */
+    body { 
+      font-family: Arial;
+      margin: 0;
+
+      /* 👉 Imagen de fondo de fotografía */
+      background-image: url("https://i.pinimg.com/1200x/86/09/c2/8609c2995898a059e0dfbcde177a8852.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Estilos del encabezado y pie de página */
+    header, footer { 
+      background: #522b0dc7;
+      color: white;
+      text-align: center;
+      padding: 1px;
+    }
+
+    /* Estilos del menú de navegación */
+    nav a { 
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Espaciado general de la sección */
+    section { 
+      padding: 40px; 
+    }
+
+    /* Contenedor de las tarjetas de servicios */
+    .servicios { 
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Estilo de cada tarjeta */
+    .card { 
+      background: #522b0d89;
+       color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 150%;
+    }
+
+    /* Estilos de listas dentro de las tarjetas */
+    .card ul { 
+      padding-left: 20px; 
+    }
+
+    .card li { 
+      margin-bottom: 6px; 
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Encabezado principal -->
+<header>
+  <h1>Nuestros Servicios</h1>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+     <a href="Galeria.html">Galeria</a>
+  </nav>
+</header>
+
+<!-- Sección principal de servicios -->
+<section class="servicios">
+
+  <!-- Tarjeta de FOTOGRAFÍA -->
+  <div class="card">
+    <h3>Fotografía</h3>
+
+    <p><strong>Impresiones fotográficas:</strong></p>
+    <ul>
+      <li>3x4</li>
+      <li>9x12</li>
+      <li>10x15</li>
+      <li>13x18</li>
+      <li>15x20</li>
+      <li>20x30</li>
+      <li>30x40</li>
+      <li>40x50</li>
+    </ul>
+
+    <p><strong>Fotos con retablos:</strong></p>
+    <ul>
+      <li>10x15</li>
+      <li>15x20</li>
+      <li>20x30</li>
+      <li>30x40</li>
+      <li>40x50</li>
+    </ul>
+
+    <p><strong>Estudios fotográficos:</strong></p>
+
+    <p><em>Primer estudio:</em></p>
+    <ul>
+      <li>Grande 15x20</li>
+      <li>Mediana 10x15</li>
+      <li>Foto billetera 5x6</li>
+    </ul>
+
+    <p><em>Segundo estudio:</em></p>
+    <ul>
+      <li>Grande 20x30</li>
+      <li>Mediana 10x15</li>
+      <li>Foto billetera 5x6</li>
+    </ul>
+
+    <p><em>Tercer estudio:</em></p>
+    <ul>
+      <li>Grande 30x40</li>
+      <li>Mediana 15x20</li>
+      <li>Foto billetera 5x6</li>
+    </ul>
+  </div>
+
+  <!-- Tarjeta de SUBLIMACIÓN -->
+  <div class="card">
+    <h3>Sublimación</h3>
+
+    <!-- Caja: Camisas y gorras -->
+    <div class="caja">
+      <strong>Camisas y gorras</strong>
+      <p>Colores:</p>
+      <ul>
+        <li>Azul</li>
+        <li>Blanca</li>
+        <li>Negro</li>
+        <li>Amarilla</li>
+        <li>Rojo</li>
+      </ul>
+    </div>
+
+    <!-- Caja: Clase de pocillos -->
+    <div class="caja">
+      <strong>Clase de pocillos</strong>
+      <ul>
+        <li>Normales</li>
+        <li>Mágicos</li>
+      </ul>
+    </div>
+
+    <!-- Caja: Productos adicionales -->
+    <div class="caja">
+      <ul>
+        <li>Termos</li>
+        <li>Portarretrato en piedra</li>
+        <li>Portarretrato en vidrio</li>
+        <li>Rompecabezas</li>
+        <li>Mug blanco 11oz</li>
+        <li>Mug mágico 11oz</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Pie de página -->
+<footer>
+  <p>&copy; 2026 Fotografia & Sublimacion</p>
+</footer>
+
+</body>
+</html>

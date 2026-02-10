@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Fotografia & Sublimacion</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      color: rgb(255, 255, 255);
+      overflow-x: hidden;
+    }
+
+    .fondo-giratorio {
+      position: fixed;
+      top: -60%;
+      left: -60%;
+      width: 220%;
+      height: 220%;
+      background-image: url("https://i.pinimg.com/1200x/6f/30/f0/6f30f08ce265e8a7fda5cbf6b3a1eba4.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: girar 120s linear infinite;
+      z-index: -1;
+      opacity: 0.55;
+    }
+
+    @keyframes girar {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(2500deg); }
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(226, 220, 220, 0.35);
+    }
+
+    /* ===== MENÚ MÁS RESALTADO ===== */
+    nav a {
+      color: rgb(255, 255, 255);
+      background: rgba(0,0,0,0.25);
+      margin: 0 15px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 0 0 6px rgba(0,0,0,0.6);
+    }
+
+    section {
+      padding: 30px;
+      margin: 20px;
+      border-radius: 10px;
+      background: rgba(30,30,30,0.4);
+    }
+
+    button {
+      background: #bb6c0b;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: rgba(30,30,30,0.4);
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="fondo-giratorio"></div>
+
+<header>
+  <h1>Contacto</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="Galeria.html">Galeria</a>
+  </nav>
+</header>
+
+<section>
+  <h2>¿Quieres una cotización?</h2>
+  <p>Contáctanos para más información.</p>
+  <p><strong>📱 Celular:</strong> 320 862 5500</p>
+  <p><strong>📧 Correo:</strong> maxisuba@hotmail.com</p>
+  <p><strong>📍 Dirección:</strong> Calle 139 #101B-27, Suba Costa Azul</p>
+
+  <a href="https://wa.me/573208625500" target="_blank">
+    <button>Escríbenos</button>
+  </a>
+</section>
+
+<footer>
+  <p>&copy; 2026 Fotografia & Sublimacion</p>
+</footer>
+
+</body>
+</html>

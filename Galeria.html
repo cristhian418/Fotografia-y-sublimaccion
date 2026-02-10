@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería - Foto & Sublima</title>
+
+  <style>
+    /* ===== ESTILOS GENERALES ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+
+      /* 👉 IMAGEN DE FONDO DE LA GALERÍA (PUEDES CAMBIAR LA URL) */
+      background-image: url("https://png.pngtree.com/background/20230517/original/pngtree-multiple-camera-cameras-sitting-on-a-table-picture-image_2638367.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* ===== ENCABEZADO ===== */
+    header {
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* ===== BOTÓN VOLVER A CONTACTO ===== */
+    .btn-contacto {
+      background: #4843436b;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* ===== CONTENEDOR DE LA GALERÍA ===== */
+    .galeria {
+      display: grid;
+
+      /* 👉 FUERZA 3 COLUMNAS FIJAS (3 ELEMENTOS AL LADO) */
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 20px;
+      padding: 30px;
+    }
+
+    /* ===== CUADROS DE FOTOS Y VIDEOS ===== */
+    .item {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    /* ===== ESTILO DE IMÁGENES ===== */
+    .item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ===== ESTILO DE VIDEOS ===== */
+    .item video {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ===== PIE DE PÁGINA ===== */
+    footer {
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== ENCABEZADO ===== -->
+<header>
+  <h1>Galería</h1>
+
+  <!-- 👉 BOTÓN PARA VOLVER A LA PÁGINA DE CONTACTO -->
+  <a href="contacto.html" class="btn-contacto">Volver a Contacto</a>
+</header>
+
+<!-- ===== GALERÍA ===== -->
+<section class="galeria">
+
+  <!-- ===== FOTO 1 ===== -->
+  <div class="item"><img src="foto1.jpg"></div>
+
+  <!-- ===== FOTO 2 ===== -->
+  <div class="item"><img src="foto2.jpg"></div>
+
+  <!-- ===== FOTO 3 ===== -->
+  <div class="item"><img src="foto3.jpg"></div>
+
+  <!-- ===== FOTO 4 ===== -->
+  <div class="item"><img src="foto4.jpg"></div>
+
+  <!-- ===== FOTO 5 ===== -->
+  <div class="item"><img src="foto5.jpg"></div>
+
+  <!-- ===== FOTO 6 ===== -->
+  <div class="item"><img src="foto6.jpg"></div>
+
+
+
+</section>
+
+<!-- ===== PIE DE PÁGINA ===== -->
+<footer>
+  <p>&copy; 2026 Foto & Sublima</p>
+</footer>
+
+</body>
+</html>
