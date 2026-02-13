@@ -10,7 +10,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
 
-      /* 👉 IMAGEN DE FONDO DE LA GALERÍA (PUEDES CAMBIAR LA URL) */
+      /* IMAGEN DE FONDO */
       background-image: url("https://png.pngtree.com/background/20230517/original/pngtree-multiple-camera-cameras-sitting-on-a-table-picture-image_2638367.jpg");
       background-size: cover;
       background-position: center;
@@ -25,7 +25,7 @@
       padding: 20px;
     }
 
-    /* ===== BOTÓN VOLVER A CONTACTO ===== */
+    /* ===== BOTÓN VOLVER ===== */
     .btn-contacto {
       background: #4843436b;
       color: white;
@@ -36,28 +36,35 @@
       margin-top: 10px;
       text-decoration: none;
       display: inline-block;
+      transition: 0.3s;
     }
 
-    /* ===== CONTENEDOR DE LA GALERÍA ===== */
+    .btn-contacto:hover {
+      background: #000000;
+    }
+
+    /* ===== GALERÍA ===== */
     .galeria {
       display: grid;
-
-      /* 👉 FUERZA 3 COLUMNAS FIJAS (3 ELEMENTOS AL LADO) */
       grid-template-columns: repeat(3, 1fr);
-
       gap: 20px;
       padding: 30px;
     }
 
-    /* ===== CUADROS DE FOTOS Y VIDEOS ===== */
+    /* ===== TARJETAS ===== */
     .item {
       background: rgba(255, 255, 255, 0.15);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
     }
 
-    /* ===== ESTILO DE IMÁGENES ===== */
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== IMÁGENES ===== */
     .item img {
       width: 100%;
       height: 250px;
@@ -65,12 +72,17 @@
       display: block;
     }
 
-    /* ===== ESTILO DE VIDEOS ===== */
-    .item video {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .galeria {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .galeria {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ===== PIE DE PÁGINA ===== */
@@ -87,33 +99,35 @@
 <!-- ===== ENCABEZADO ===== -->
 <header>
   <h1>Galería</h1>
-
-  <!-- 👉 BOTÓN PARA VOLVER A LA PÁGINA DE CONTACTO -->
   <a href="contacto.html" class="btn-contacto">Volver a Contacto</a>
 </header>
 
 <!-- ===== GALERÍA ===== -->
 <section class="galeria">
 
-  <!-- ===== FOTO 1 ===== -->
-  <div class="item"><img src="foto1.jpg"></div>
+  <div class="item">
+    <img src="https://i.pinimg.com/1200x/a3/6d/54/a36d547bf1da3ebf241b03bd90c6b7cb.jpg" alt="Foto 1">
+  </div>
 
-  <!-- ===== FOTO 2 ===== -->
-  <div class="item"><img src="foto2.jpg"></div>
+  <div class="item">
+    <img src="https://i.pinimg.com/736x/e8/d6/ee/e8d6ee90b5fee0575bdd7d3d2b8b0f04.jpg" alt="Foto 2">
+  </div>
 
-  <!-- ===== FOTO 3 ===== -->
-  <div class="item"><img src="foto3.jpg"></div>
+  <div class="item">
+    <img src="https://i.pinimg.com/1200x/ea/a2/fa/eaa2fad50caecd59189315f8bfc20c00.jpg" alt="Foto 3">
+  </div>
 
-  <!-- ===== FOTO 4 ===== -->
-  <div class="item"><img src="foto4.jpg"></div>
+  <div class="item">
+    <img src="https://i.pinimg.com/1200x/6c/e4/13/6ce413648007d8a1ea03ea1e8b7a7a9a.jpg" alt="Foto 4">
+  </div>
 
-  <!-- ===== FOTO 5 ===== -->
-  <div class="item"><img src="foto5.jpg"></div>
+  <div class="item">
+    <img src="https://i.pinimg.com/736x/3e/62/c3/3e62c373da87ea1338239be24dcf3df5.jpg" alt="Foto 5">
+  </div>
 
-  <!-- ===== FOTO 6 ===== -->
-  <div class="item"><img src="foto6.jpg"></div>
-
-
+  <div class="item">
+    <img src="https://http2.mlstatic.com/taza-pocillo-vintage-sublimacion-sublimar-filo-colores-10pzs-D_NQ_NP_825056-MLM27722861516_072018-F.jpg" alt="Foto 6">
+  </div>
 
 </section>
 
@@ -124,3 +138,4 @@
 
 </body>
 </html>
+
